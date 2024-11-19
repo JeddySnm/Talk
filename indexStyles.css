@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+.frame{
+  overflow: hidden;
+  width: 300px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cross {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arm {
+  position: absolute;
+  width: 180px;
+  height: 60px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 94px;
+}
+.horizontal {
+  top: 300px;
+  transform: translateY(-50%);
+}
+.vertical {
+  left: 250px;
+  transform: translateX(-50%);
+}
+.top {
+  color: #000000;
+  letter-spacing:0.20em;
+  top: -45px;
+  left: 20px;
+  animation: moveAnimation1 2s 1s forwards;
+}
+.bottom {
+  top: 50px;
+  opacity: 0;
+  animation: moveAnimation2 2s 2s forwards;
+
+}
+.left {
+  color: #000000;
+  left: -180px;
+  font-family: 'lemon', sans-serif;
+  animation: moveAnimation3 2s 3s forwards;
+}
+.right {
+  color: #000000;
+  font-family: 'lemon', sans-serif;
+  width: 80px;
+  top: 22px;
+  left: 290px;
+  font-size: 114px;
+  animation: moveAnimation4 2s 4s forwards;
+
+}
+
+@keyframes moveAnimation1 {
+  0%{
+    top: -45px;
+  }
+  50%{
+    top: 50px;
+  }
+  100%{
+    top: -45px;
+  }
+}
+@keyframes moveAnimation2 {
+  0%{
+    opacity: 1;
+    top: 145px;
+    left: 10px;
+  }
+  50%{
+    top: 50px;
+    left: 10px;
+  }
+  100%{
+    opacity: 1;
+    left: 295px;
+  }
+}
+@keyframes moveAnimation3 {
+  0%{
+    opacity: 1;
+    left: -180px;
+  }
+  50%{
+    letter-spacing:0.15em;
+    left: 106px;
+    color: #000000;
+
+  }
+  100%{
+    letter-spacing:0;
+    opacity: 1;
+    left: 70px;
+    color: #33A392;
+    -webkit-text-stroke-width:1.5px;
+    -webkit-text-stroke-color: rgb(230, 230, 230);
+    text-shadow: 0px 0px 4px rgb(0,0,0,0.5);
+  }
+}
+@keyframes moveAnimation4 {
+  0%{
+    left: 290px;
+  }
+  50%{
+    left: 215px;
+    color: #33A392;
+    -webkit-text-stroke-width:1.5px;
+    -webkit-text-stroke-color: rgb(230, 230, 230);
+    text-shadow: 0px 0px 4px rgb(0,0,0,0.5);
+  }
+  100%{
+    color: #33A392;
+    left: 216px;
+    -webkit-text-stroke-width:1.5px;
+    -webkit-text-stroke-color: rgb(230, 230, 230);
+    text-shadow: 0px 0px 4px rgb(0,0,0,0.5);
+  }
+}
+.navegarBoton {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+ 
+ .navegarBoton button {
+  margin: 0px 10px;
+  opacity: 0;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  animation: botonAppier 2s 5s forwards;
+ }
+ 
+ .navegarBoton button:hover {
+  background-color: #0056b3;
+ }
+  @keyframes botonAppier {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
