@@ -26,3 +26,5 @@ El proyecto incluye una página web (una app de chat en linea) que accede a una 
 - Abre XAMPP y enciende Apache y MySQL.
 
 6) Accede al proyecto a través de http://localhost/tu-repositorio. (coloca la direccion de tu repositorio)
+
+--Visualiza el index en https://jeddysnm.github.io/Talk/
